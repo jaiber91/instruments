@@ -1,13 +1,18 @@
 const navToggle = document.querySelector('.nav__toggle');
-const navClose = document.querySelector('.nav__close')
 const navMenu = document.querySelector('.nav__menu');
+const closeNav = document.querySelector('.nav__close');
+const itemNav = document.querySelectorAll('.nav__item--active');
 
 navToggle.addEventListener('click', () =>{
     navMenu.classList.toggle('nav__menu-visible')
 })
     
-
+closeNav.addEventListener('click',()=>{
+    navMenu.classList.remove('nav__menu-visible')
+})
 
 /*navClose.addEventListener('click', ()=>{
     navMenu.classList.remove('nav__menu-visible')
 })*/
+
+   
