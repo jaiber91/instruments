@@ -1,0 +1,11 @@
+ul{
+    display: flex;
+    
+}
+ul li{
+    height: 10%;
+    width: 5%;
+    background-color: brown;
+    margin-right: 2%;
+    margin: 5% auto;
+}

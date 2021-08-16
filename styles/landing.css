@@ -1,0 +1,258 @@
+:root{
+    --navColor: #034980;
+    --bgGradient: linear-gradient(90deg, #00467F 0%, #A5CC82 100%);
+    --fontColor: #ffffff; 
+    --footColor: #9EC682;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+ background-color: var(--navColor);
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__logo{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    padding: 1%;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav__item{
+    font-size: 1rem;
+    margin: 0 2rem;
+    text-transform: uppercase;
+}
+.nav__link{
+    color: var(--fontColor);
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+}
+.nav__link:hover{
+    background-color: var(--footColor);
+    transition: 0.5s;
+}
+.nav__toggle{
+    color: var(--fontColor);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    
+    display: none;
+}
+/*.nav__close{
+    position: absolute;
+    left: 100%;
+    top: 36%;
+}*/
+.imgBig{
+    margin-top: 8%;
+}
+.imgBig img{ 
+    width: 100%;
+    
+}
+.percussion{
+    margin-top: -1%;
+    
+}
+.percussion__title{
+    text-align: center;
+    padding: 2% 1%;
+    margin-top:0;
+   background: var(--bgGradient);
+   width: 100%;
+}
+.percussion__title h2{
+    font-size: 3rem;
+    color: var(--fontColor);
+    text-transform: uppercase;
+}
+.percussion__instruments{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    margin: 5% ;
+}
+.percussion__instruments--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.percussion__instruments--item span{
+    color: var(--navColor);
+    font-size: 2.2rem;
+}
+
+.strings__title{
+    text-align: center;
+    padding: 2% 1%;
+    margin-top:0;
+   background: var(--bgGradient);
+   width: 100%;
+}
+.strings__title h2{
+    font-size: 3rem;
+    color: var(--fontColor);
+    text-transform: uppercase;
+}
+.strings__instruments{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    margin: 5% ;
+}
+.strings__instruments--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.strings__instruments--item span{
+    color: var(--navColor);
+    font-size: 2.2rem;
+}
+
+.wind__title{
+    text-align: center;
+    padding: 2% 1%;
+    margin-top:0;
+   background: var(--bgGradient);
+   width: 100%;
+}
+.wind__title h2{
+    font-size: 3rem;
+    color: var(--fontColor);
+    text-transform: uppercase;
+}
+.wind__instruments{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    margin: 5% ;
+}
+.wind__instruments--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wind__instruments--item span{
+    color: var(--navColor);
+    font-size: 2.2rem;
+}
+
+
+.electronics__title{
+    text-align: center;
+    padding: 2% 1%;
+    margin-top:0;
+   background: var(--bgGradient);
+   width: 100%;
+}
+.electronics__title h2{
+    font-size: 3rem;
+    color: var(--fontColor);
+    text-transform: uppercase;
+}
+.electronics__instruments{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    margin: 5% ;
+}
+.electronics__instruments--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.electronics__instruments--item span{
+    color: var(--navColor);
+    font-size: 2.2rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--footColor);
+    height: 10rem;
+}
+.footer__logo{
+    margin-left: 5%;
+}
+.footer__text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+.footer__text h3{
+    margin-right: 5%;
+    color: var(--navColor);
+}
+.footer__socialRed{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+.footer__socialRed img{
+    width: 2rem;
+}
+
+@media (max-width: 768px) {
+    .header{
+        height: 5rem;
+    }
+    .nav__logo img{
+        width: 57%;
+    }
+    .nav__menu{
+       flex-direction: column;
+       align-items: center;
+       background-color: var(--footColor) ;
+       position: fixed;
+       left: 0;
+       top: 5rem;
+       width: 100%;
+       padding: 1.5rem 0;
+       height: calc(100% - 1rem);
+       overflow-y: auto;
+
+       left: 100%;/*el menú queda oculto a la derecha*/
+       transition: left 0.3s;
+    }
+    .nav__link:hover{
+        background: none;
+        color: var(--navColor);
+        
+    }
+    .nav__item{
+        margin-bottom: 20%;
+    }
+    .nav__toggle{
+        display: block;
+        cursor: pointer;
+    }
+    
+    /*para activa el menu con JS*/
+    .nav__menu-visible{
+        left: 0; /*cuando está activo cubre toda la pantalla*/
+    }
+}

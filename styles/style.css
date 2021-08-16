@@ -1,0 +1,31 @@
+:root{
+    --bgColor:linear-gradient(90deg, #00467F 0%, #A5CC82 100%); 
+    --btColor:#5ADC6F;
+    --txtColor: #ffffff; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home__logo{
+    margin-left: 5%;
+}
+.home__buttom{
+    padding: 0.2% 2% 0.3% 2% ;
+    margin-top: 2%;
+    background: var(--btColor) ;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--txtColor);
+    text-transform: uppercase;
+}
