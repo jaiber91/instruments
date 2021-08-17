@@ -5,7 +5,7 @@ const itemNav = document.querySelectorAll('.nav__item--active');
 const apiKey = '?api_key=wxKOBkt2brbVYuocbpiMq4r1rJgeSrXL';
 const url = 'https://api.giphy.com/v1/gifs/trending';
 const urlFull = 'https://api.giphy.com/v1/gifs/search?api_key=wxKOBkt2brbVYuocbpiMq4r1rJgeSrXL&q=guitar&limit=3&offset=0&rating=g&lang=en'
-const contenido = document.querySelector(".strings");
+const contenido = document.querySelector(".strings__instruments");
 
 
 
@@ -58,7 +58,7 @@ function Seeimages(imagesData) {
        <div class="strings__instruments--item">
             
             <img src="${giff}" alt="giff">
-            <span>Guitarra</span>
+            
         </div>  
        `
     })
