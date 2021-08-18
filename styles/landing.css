@@ -310,7 +310,19 @@
 .footer__socialRed img{
     width: 2rem;
 }
-
+.footer__made{
+    display: flex;
+    justify-content: center;
+    background: var(--footColor);
+}
+.footer__made h4{
+    color: var(--fontColor);
+    font-size:0.8rem;;
+}
+.footer__made h4 a{
+    text-decoration: none;
+    color: var(--navColor);
+}
 @media (max-width: 768px) {
     .header{
         height: 5rem;
