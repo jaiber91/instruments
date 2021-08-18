@@ -103,6 +103,7 @@
     position: relative;
     border-radius: 2rem;
     margin-top: 2%;
+    
 }
 
 .percussion__instruments--item img{
@@ -367,6 +368,9 @@
 @media (max-width: 420px) {
     .nav__close{
         left: 84%;
+    }
+    .footer__logo{
+        display: none;
     }
 }
 @media (max-width: 320px) {
