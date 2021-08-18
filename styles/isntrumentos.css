@@ -1,11 +1,175 @@
-ul{
-    display: flex;
+:root{
+    --colorBase: #6B281A;
+    --colorDo: #FFC300;
+    --colorRe:#FF5733;
+    --colorMi:#1A6B28;
+    --colorFa:#1A216B;
+    --colorSol:#B10B6D;
+    --colorLa:#D31906;
+    --colorSi:#06D34F;
     
 }
-ul li{
-    height: 10%;
-    width: 5%;
-    background-color: brown;
+.instrument{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.instrument__base{
+    width: 41%;
+    height: 13%;
+    background-color: var(--colorBase);
+    transform: translateY(-50%);
+    border-radius: 3px;
+    box-shadow: 1px 1px #3a2f21, 1px 1px #3a2f21, 2px 2px #3a2f21, 3px 3px #3a2f21;
+    position: relative;
+}
+
+.instrument__container{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 40%;
+    top: 28%;
+    
+}
+.instrument__container li{
+    height: 12rem;
+    width: 8%;
+    border-radius: 0.5rem;
+    background-color: red;
     margin-right: 2%;
-    margin: 5% auto;
+    /*margin: 5% auto;*/
+    list-style: none;
+}
+.instrument__container li:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 16rem;
+    background-color: var(--colorDo);
+}
+.instrument__container li:nth-child(1) img{
+    width: 46%;
+    transform: rotate(45deg);
+}
+.instrument__container li:nth-child(1) p{
+    text-transform: uppercase;
+    margin: 42% 0;
+}
+.instrument__container li:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    margin-top: 1%;
+    background-color: var(--colorRe);
+}
+.instrument__container li:nth-child(2) img{
+    width: 46%;
+}
+.instrument__container li:nth-child(2) p{
+    text-transform: uppercase;
+    margin: 42% 0;
+}
+.instrument__container li:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 14rem;
+    margin-top: 2%;
+    background-color: var(--colorMi);
+}
+.instrument__container li:nth-child(3) img{
+    width: 46%;
+    transform: rotate(55deg);
+}
+.instrument__container li:nth-child(3) p{
+    text-transform: uppercase;
+    margin: 42% 0;
+}
+.instrument__container li:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    margin-top: 3%;
+    background-color: var(--colorFa);
+}
+.instrument__container li:nth-child(4) img{
+    width: 46%;
+    transform: rotate(49deg);
+}
+.instrument__container li:nth-child(4) p{
+    text-transform: uppercase;
+    margin: 42% 0;
+}
+.instrument__container li:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    margin-top: 4%;
+    background-color: var(--colorSol);
+}
+.instrument__container li:nth-child(5) img{
+    width: 46%;
+    transform: rotate(108deg);
+}
+.instrument__container li:nth-child(5) p{
+    text-transform: uppercase;
+    margin: 42% 0;
+}
+.instrument__container li:nth-child(6){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 11rem;
+    margin-top: 5%;
+    background-color: var(--colorLa);
+}
+.instrument__container li:nth-child(6) img{
+    width: 46%;
+}
+.instrument__container li:nth-child(6) p{
+    text-transform: uppercase;
+    margin: 42% 0;
+}
+.instrument__container li:nth-child(7){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    margin-top: 6%;
+    background-color: var(--colorSi);
+}
+.instrument__container li:nth-child(7) img{
+    width: 46%;
+}
+.instrument__container li:nth-child(7) p{
+    text-transform: uppercase;
+    margin: 42% 0;
+}
+.instrument__container li:nth-child(8){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 9rem;
+    margin-top: 7%;
+    background-color: var(--colorDo);
+}
+.instrument__container li:nth-child(8) img{
+    width: 46%;
+}
+.instrument__container li:nth-child(8) p{
+    text-transform: uppercase;
+    margin: 42% 0;
 }
