@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", callApi);
+
 const navToggle = document.querySelector(".nav__toggle");
 const navMenu = document.querySelector(".nav__menu");
 const closeNav = document.querySelector(".nav__close");
@@ -63,7 +64,10 @@ function seePercussion(percussionData) {
        
             
        <div class="percussion__instruments--item">
-            <img src="${giff}" alt="giff">
+            <img src="${giff}" loading="lazy" alt="giff">
+            <a class="capaPercussion" href="/isntrumento.html" target="_blank" ></a>
+               
+           
        </div>
             
        
@@ -92,8 +96,8 @@ function Seeimages(imagesData) {
     giffHTML += `
        <div class="strings__instruments--item">
             
-            <img src="${giff}" alt="giff">
-            
+            <img src="${giff}" loading="lazy" alt="giff">
+            <a class="capaStrings" href="/isntrumento.html" target="_blank" ></a>
         </div>  
        `;
   });
@@ -118,7 +122,8 @@ function seeWind(windData) {
     giffHTML += `
                   
          <div class="wind__instruments--item">
-            <img src="${giff}" alt="giff">
+            <img src="${giff}" loading="lazy" alt="giff">
+            <a class="capaWind" href="/isntrumento.html" target="_blank" ></a>
         </div>
             
                
@@ -142,8 +147,9 @@ function dataElectronic() {
   
       giffHTML += `
                     
-           <div electronics__instruments--item">
-              <img src="${giff}" alt="giff">
+           <div class= "electronics__instruments--item">
+              <img src="${giff}" loading="lazy" alt="giff">
+              <a class="capaElectronics" href="/isntrumento.html" target="_blank" ></a>
           </div>
               
                  

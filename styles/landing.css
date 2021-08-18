@@ -14,6 +14,7 @@
  width: 100%;
  top: 0;
  left: 0;
+ z-index: 1;
 }
 .nav{
     display: flex;
@@ -32,7 +33,7 @@
 }
 .nav__item{
     font-size: 1rem;
-    margin: 0 2rem;
+    margin: 0 1rem;
     text-transform: uppercase;
 }
 .nav__link{
@@ -91,7 +92,7 @@
 .percussion__instruments{
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 6%;
     flex-wrap: wrap;
     margin: 5% ;
 }
@@ -99,12 +100,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.percussion__instruments--item span{
-    color: var(--navColor);
-    font-size: 2.2rem;
+    position: relative;
+    border-radius: 2rem;
+    margin-top: 2%;
 }
 
+.percussion__instruments--item img{
+    width: 25rem;
+    height: 20rem;
+    border-radius: 1rem;
+    transition: all 500ms ease-out;
+}
+.capaPercussion{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.percussion__instruments--item:hover > .capaPercussion{
+    opacity: 1;
+    visibility: visible;
+}
 .strings__title{
     text-align: center;
     padding: 2% 1%;
@@ -120,7 +143,7 @@
 .strings__instruments{
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 6%;
     flex-wrap: wrap;
     margin: 5% ;
 }
@@ -128,10 +151,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-top: 2%;
 }
-.strings__instruments--item span{
-    color: var(--navColor);
-    font-size: 2.2rem;
+.strings__instruments--item img{
+    width: 25rem;
+    height: 20rem;
+    border-radius: 1rem;
+    transition: all 500ms ease-out;
+}
+.capaStrings{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.strings__instruments--item:hover > .capaStrings{
+    opacity: 1;
+    visibility: visible;
 }
 
 .wind__title{
@@ -149,7 +193,7 @@
 .wind__instruments{
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 6%;
     flex-wrap: wrap;
     margin: 5% ;
 }
@@ -157,10 +201,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 2%;
 }
-.wind__instruments--item span{
-    color: var(--navColor);
-    font-size: 2.2rem;
+.wind__instruments--item img{
+    width: 25rem;
+    height: 20rem;
+    border-radius: 1rem;
+    transition: all 500ms ease-out;
+}
+.capaWind{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.wind__instruments--item:hover > .capaWind{
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -179,7 +245,7 @@
 .electronics__instruments{
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 6%;
     flex-wrap: wrap;
     margin: 5% ;
 }
@@ -187,11 +253,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-top: 2%;
 }
-.electronics__instruments--item span{
-    color: var(--navColor);
-    font-size: 2.2rem;
+.electronics__instruments--item img{
+    width: 25rem;
+    height: 20rem;
+    border-radius: 1rem;
+    transition: all 500ms ease-out;
 }
+.capaElectronics{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.electronics__instruments--item:hover > .capaElectronics{
+    opacity: 1;
+    visibility: visible;
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -268,5 +356,21 @@
     .nav__close{
         display: block;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav__close{
+        left: 88%;
+    }
+}
+@media (max-width: 420px) {
+    .nav__close{
+        left: 84%;
+    }
+}
+@media (max-width: 320px) {
+    .nav__menu-visible {
+        height: 122vh;
     }
 }

@@ -1,4 +1,4 @@
-/*const context = new AudioContext()//esto es un objeto
+const context = new AudioContext()//esto es un objeto
 
 
 function jsNota(frecuencia) {
@@ -11,8 +11,8 @@ function jsNota(frecuencia) {
    g.connect(context.destination)//conectado el gain con el destino del contxto
    o.start(0)
    g.gain.exponentialRampToValueAtTime(0.00001, context.currentTime + 1.5)//funcion para darle un tiempo
-}*/
-const tecla = document.querySelector('.tecla1')
+}
+/*const tecla = document.querySelector('.tecla1')
 let audioC = new AudioContext();
 
 
@@ -20,7 +20,7 @@ function laser() {
     
 }
 
-tecla.addEventListener('click', funcion)
+tecla.addEventListener('click', funcion)*/
 
 
 
