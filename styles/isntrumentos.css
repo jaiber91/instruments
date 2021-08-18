@@ -18,6 +18,9 @@
 .instrument__base{
     width: 41%;
     height: 13%;
+    top: 2%;
+    left: 1%;
+    background-image: url("/assets/wood.png");
     background-color: var(--colorBase);
     transform: translateY(-50%);
     border-radius: 3px;

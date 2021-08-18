@@ -12,15 +12,7 @@ function jsNota(frecuencia) {
    o.start(0)
    g.gain.exponentialRampToValueAtTime(0.00001, context.currentTime + 1.5)//funcion para darle un tiempo
 }
-/*const tecla = document.querySelector('.tecla1')
-let audioC = new AudioContext();
 
-
-function laser() {
-    
-}
-
-tecla.addEventListener('click', funcion)*/
 
 
 
